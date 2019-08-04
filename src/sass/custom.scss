@@ -37,6 +37,10 @@ $blue-text: #4990e2;
     .main-wrap__header__right {
       text-align: right;
       flex: 1;
+      cursor: pointer;
+      &:hover {
+        color: $blue-text
+      }
     }
   }
 
@@ -134,10 +138,14 @@ $blue-text: #4990e2;
 .show-button {
   text-align: center;
   button {
+    width: 100%;
     border: 0px;
     padding: 8px 15px;
     border-radius: 5px;
     background: #4990e2;
+    &:hover {
+      background: rgb(79, 166, 255);
+    }
   }
 }
 
@@ -151,7 +159,7 @@ $blue-text: #4990e2;
     border: 1px solid #ccc;
     text-align: center;
     height: 40px;
-    line-height: 40px;
+    line-height: 36px;
     font-weight: 500;
     cursor: pointer;
     &:hover {
@@ -167,6 +175,8 @@ $blue-text: #4990e2;
   .c-btn-group__item--left {
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .c-btn-group__item--right {
     border-top-right-radius: 8px;
@@ -236,6 +246,12 @@ $blue-text: #4990e2;
   }
 
   .consult__sender {
+    display: flex;
+    .glyphicon {
+      color: #ccc;
+      line-height: 35px;
+      font-size: 18px;
+    }
     input {
       width: 100%;
       border: 0;

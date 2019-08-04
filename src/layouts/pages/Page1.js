@@ -89,7 +89,7 @@ class Page1 extends Component {
                         <div className="c-btn-group">
                             <div className="c-btn-group__item c-btn-group__item--left">Вид на город</div>
                             <div className="c-btn-group__item">Проспект</div>
-                            <div className="c-btn-group__item c-btn-group__item--right">Парк Фили</div>
+                            <div className="c-btn-group__item c-btn-group__item--right c-btn-group__item--active">Парк Фили</div>
                         </div>
                     </div>
 
@@ -135,6 +135,7 @@ class Page1 extends Component {
 
                     <div className="consult__sender">
                         <input type="text" placeholder="+7 000 000-00-00" />
+                        <span className="glyphicon glyphicon-arrow-right" aria-hidden="true"/>
                     </div>
                 </div>
 
