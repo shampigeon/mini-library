@@ -1,8 +1,8 @@
 import { BOOKS_REQ, BOOKS_SUCCESS, BOOKS_UPDATE, BOOKS_FAILED } from './constant';
-import { mockData } from '../helpers/MockData'
+// import { mockData } from '../helpers/MockData'
 
 const initialState = {
-    bookList: mockData,
+    bookList: 'mockData',
     loader: false,
 };
 

@@ -1,8 +1,8 @@
 import { AUTHOR_REQ, AUTHOR_SUCCESS, AUTHOR_UPDATE, AUTHOR_FAILED } from './constant';
-import { mockAuthors } from '../helpers/MockData'
+// import { mockAuthors } from '../helpers/MockData'
 
 const initialState = {
-    authorsList: mockAuthors,
+    authorsList: 'mockAuthors',
     loader: false
 };
 

@@ -5,23 +5,19 @@ import {
     Route,
     withRouter
 } from "react-router-dom";
-import Authors from './layouts/Author/Authors';
-import Library from './layouts/Library/Library';
-import BookEdit from './layouts/Library/BookEdit';
+import Page1 from './layouts/pages/Page1';
+import Page2 from './layouts/pages/Page2';
 import NotMatch from './layouts/NotMatch';
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+// import 'react-toastify/dist/ReactToastify.css';
 import WrapperElement from './layouts/WrapperElement'
 
 const Routes = () => (
     <div>
         <Switch>
-            <RouteWithLayout layout={WrapperElement} exact path="/" component={Library} />
-            <RouteWithLayout layout={WrapperElement} exact path="/author" component={Authors} />
-            <RouteWithLayout layout={WrapperElement} path="/book/:id" component={BookEdit} />
+            <RouteWithLayout layout={WrapperElement} exact path="/" component={Page1} />
+            <RouteWithLayout layout={WrapperElement} exact path="/second" component={Page2} />
             <Route component={NotMatch} />
         </Switch>
-        <ToastContainer />
     </div>
 );
 
